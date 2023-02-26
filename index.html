@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="w-[100vw] h-[100%] justify-center bg-white flex">
+      
+      <div
+        class="max-w-[400px] h-[100vh] shadow-xl overflow-y-scroll scrollbar-none bg-white overflow-hidden">
+        
+        <!-- navbar---- -->
+        <div class=" sticky top-0 bg-white z-20">
+          <div class="flex relative p-4 pb-2 gap-2 w-[100%]">
+            <img
+              src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikluc3RhZ3JhbSIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjkiIHJvbGU9Iml.svg"
+              alt=""
+            />
+            <img
+              src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkRvd24gY2hldnJvbiBpY29uIiBjbGFzcz0iX2FiNi0iIGNvbG9yPSJyZ2IoMzgsIDM4LCAzOCkiIGZpbGw9InJnYigzOCwgMzgsIDM4KSIgaGVpZ2h0PSIxMiI.svg"
+              alt=""
+            />
+            <div class="absolute flex right-4 gap-6">
+              <img onmouseover="fadedlike(this)"
+              onmouseout="fadedlikeout(this)"
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg"
+                alt=""
+              />
+              <img
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ik1lc3NlbmdlciIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU9Iml.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+
+        <!-- <div class=" w-[100%] h-[40px] bg-slate-500 absolute top-[700px] z-20 ">
+
+        </div> -->
+        <!-- Story section---- -->
+        <div class="w-full overflow-x-auto scrollbar-none pt-2 px-4 pb-2">
+          <div class="flex w-fit gap-4" id="story-bar">
+            <div class="flex-col relative">
+              <div class="absolute p-[1px] z-10 bottom-6 right-[5px]">
+                <img
+                  class="w-[18px]"
+                  src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlBsdXMgaWNvbiIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDAsIDE0OSwgMjQ2KSIgZmlsbD0icmdiKDAsIDE0OSwgMjQ2KSIgaGVpZ2h0PSIxNiIgcm9sZT0.svg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="w-16 h-16 relative rounded-[50%] border overflow-hidden"
+              >
+                <img
+                  class=""
+                  src="HD-wallpaper-eren-attack-on-titan-eren-jaeger-eren-yeager-shingeki-no-kyojin.jpg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-[12px] w-[64px] text-center overflow-clip whitespace-nowrap text-ellipsis"
+              >
+                Your story
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[100%] h-[1px] bg-slate-200"></div>
+
+        <!-- post section -->
+        <div class="w-[100%]">
+          <div class="w-[100%] mb-2 relative">
+            <div class="flex justify-between p-1 ">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 border-red-400 p-[2px] rounded-[50%] border-2 overflow-hidden"
+                >
+                  <img
+                    class="h-full w-full rounded-[50%]"
+                    src="photo-1529665253569-6d01c0eaf7b6.jfif"
+                    alt=""
+                  />
+                </div>
+                <p class="w-[64px] text-center">bishakh_dutta</p>
+              </div>
+              <img
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ik1vcmUgb3B0aW9ucyIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU.svg"
+                alt=""
+              />
+            </div>
+            <img
+             class=" abcd absolute -z-10 top-[35%] left-[45%] opacity-0"
+             src="./follow/white-heart-hi.png" width="40px" alt="">
+            <img
+            ondblclick="doubleClickLike(this)"
+              src="photo-1529665253569-6d01c0eaf7b6.jfif"
+              width="100%"
+              alt=""
+            />
+            <div class="flex p-2 gap-5 relative">
+              <img
+                height="24px"
+                width="24px"
+                onmouseover="fadedlike(this)"
+                onmouseout="fadedlikeout(this)"
+                onclick="toggleLike(this)"
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg"
+                alt=""
+              />
+              <img
+                onmouseover="fadedcomment(this)"
+                onmouseout="fadedcommentout(this)"
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWc.svg"
+                alt=""
+              />
+              <img
+              onmouseover="fadedshare(this)"
+              onmouseout="fadedshareout(this)"
+                src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg"
+                alt=""
+              />
+              <div class="absolute right-4">
+                <img
+                onmouseover="fadedbook(this)"
+                onmouseout="fadedbookout(this)"
+                onclick="togglebook(this)"
+                  src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNhdmUiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="pl-2 flex-col space-y-[1px]">
+              <p class="text-[15px] font-bold">144 likes</p>
+              <p>
+                <span class="font-bold">bisakh_dutta </span> ...I am the hero...
+              </p>
+              <p class="text-[14px]">view all <span>13</span> comments</p>
+              <div class="flex gap-2">
+                <div class="w-6 h-6 border rounded-[50%] overflow-hidden">
+                  <img
+                    src="HD-wallpaper-eren-attack-on-titan-eren-jaeger-eren-yeager-shingeki-no-kyojin.jpg"
+                    alt=""
+                  />
+                </div>
+                <input class=" text-[14px] focus:outline-0 " type="text" placeholder="Add a comment...">
+              </div>
+              <p class="text-[12px]">3 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col bg-gray-100">
+          <div class="flex justify-between px-2">
+            <p class="font-semibold">Suggested for you</p>
+            <p class="text-[14px] text-blue-600 bg-opacity-95 font-semibold">
+              See all
+            </p>
+          </div>
+          <div class="overflow-x-auto scrollbar-none flex" id="friend-bar">
+            <div class="h-[265px] w-[230px] flex">
+              <div
+                class="m-2 relative w-[200px] rounded-md p-2 flex gap-[1px] flex-col bg-white items-center"
+              >
+                <img
+                  class="absolute top-2 right-2"
+                  src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNsb3NlIiBjbGFzcz0iX2FiNi0iIGNvbG9yPSJyZ2IoMTQyLCAxNDIsIDE0MikiIGZpbGw9InJnYigxNDIsIDE0MiwgMTQyKSIgaGVpZ2h0PSIxMiIgcm9sZT0.svg"
+                  alt=""
+                />
+                <div
+                  class="w-[70%] h-[120px] border rounded-[50%] overflow-hidden"
+                >
+                  <img
+                    src="/follow/0d93b2fb451b932932e8a9d8497ef767.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="text-[16px] font-bold">Rohini_342</p>
+                <div class="text-[14px]">Followed by tom_k_n_d_n</div>
+                <button
+                  class="border-2 w-[90%] h-[33px] my-2 rounded-lg text-white bg-blue-600 bg-opacity-95 hover:bg-white hover:text-blue-600"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cought up section -->
+        <div class="flex flex-col items-center py-5">
+          <img src="illo-confirm-refresh-light (1).png" width="50px" alt="" />
+          <p class="font-semibold">You've completely cought up</p>
+          <p class="text-[15px]">You've seen all new posts from the past 3</p>
+          <p class="text-[15px]">days</p>
+        </div>
+
+        <div class="w-[100%]" id="feed-bar">
+          <!-- other contents -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    
+    
+    
+    const doubleClickLike=(e)=>{
+      toggleLike(e.nextElementSibling.firstElementChild);
+      e.previousElementSibling.classList.toggle("likedHover");
+    }
+    const fadedlike=(e)=>{
+      if(e.classList.contains("liked")){
+        e.src="./liked.png";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg"
+      }
+    }
+    const fadedlikeout=(e)=>{
+      if(e.classList.contains("liked")){
+        e.src="./liked.png";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg"
+      }
+    }
+    const toggleLike = (e) => {
+      if(e.classList.contains("liked")){
+        e.classList.remove("liked");
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg";
+      }else{
+        e.classList.add("liked");
+        e.src="./liked.png";
+      }
+    };
+    
+    
+    
+    const fadedcomment=(e)=>{
+      if(e.classList.contains("faded")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWc.svg";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiByb2x.svg"
+      }
+    }
+    const fadedcommentout=(e)=>{
+      if(e.classList.contains("faded")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiByb2x.svg"
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWc.svg";
+      }
+    }
+    
+    
+    
+    
+    
+    const fadedshare=(e)=>{
+      if(e.classList.contains("share")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiB.svg"
+      }
+    }
+    const fadedshareout=(e)=>{
+      if(e.classList.contains("share")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiB.svg"
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg";
+      }
+    }
+
+    
+    
+    
+    
+    const fadedbook=(e)=>{
+      if(e.classList.contains("book")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlJlbW92ZSIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU9ImltZyI.svg";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNhdmUiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigxNDIsIDE0MiwgMTQyKSIgZmlsbD0icmdiKDE0MiwgMTQyLCAxNDIpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg"
+      }
+    }
+    const fadedbookout=(e)=>{
+      if(e.classList.contains("book")){
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlJlbW92ZSIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU9ImltZyI.svg";
+      }
+      else{
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNhdmUiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg"
+      }
+    }
+    const togglebook = (e) => {
+      if(e.classList.contains("book")){
+        e.classList.remove("book");
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNhdmUiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg";
+      }else{
+        e.classList.add("book");
+        e.src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlJlbW92ZSIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU9ImltZyI.svg";
+      }
+    };
+
+    
+    
+    
+
+
+    
+    
+    const storyBar = document.getElementById("story-bar");
+    const storyData = [
+    {
+      src: "com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+        name: "sus._.m3ow",
+      },
+      {
+        src: "photo-1529665253569-6d01c0eaf7b6.jfif",
+        name: "bishakh_dutta",
+      },
+      {
+        src: "aesthetic-profile-picture-2-1024x1024.jpg",
+        name: "basudha_02",
+      },
+      {
+        src: "profile-portrait-handsome-young-man-posing-studio-39540543.jpg",
+        name: "just_aryesh",
+      },
+      {
+        src: "com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+        name: "sus._.m3ow",
+      },
+      {
+        src: "photo-1529665253569-6d01c0eaf7b6.jfif",
+        name: "bishakh_dutta",
+      },
+      {
+        src: "aesthetic-profile-picture-2-1024x1024.jpg",
+        name: "basudha_02",
+      },
+      {
+        src: "th.jfif",
+        name: "just_aryesh",
+      },
+    ];
+    storyData.forEach((data) => {
+      const elem = `
+        <div class="flex-col">
+            <div class="w-16 h-16 border-red-400 p-1 rounded-[50%] border-2 overflow-hidden">
+                <img
+                  class="h-full w-full rounded-[50%]"
+                  src="${data.src}"
+                  alt=""
+                />
+              </div>
+              <p class="text-[12px] w-[64px] text-center overflow-clip whitespace-nowrap text-ellipsis">${data.name}</p>
+              
+        </div>
+        `;
+      storyBar.innerHTML += elem;
+    });
+
+    const feedBar = document.getElementById("feed-bar");
+    const feedData = [
+      {
+        img: "com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+        name1: "sus._.m3ow",
+        likes: "464 likes",
+        comment: "First Digital Painting......",
+        number: "34",
+        hours: "11",
+      },
+      {
+        img: "aesthetic-profile-picture-2-1024x1024.jpg",
+        name1: "basudha_02",
+        likes: "464 likes",
+        comment: "Best thing to do now ",
+        number: "9",
+        hours: "10",
+      },
+      {
+        img: "profile-portrait-handsome-young-man-posing-studio-39540543.jpg",
+        name1: "just_aryesh",
+        likes: "144 likes",
+        comment: "Nature lover",
+        number: "6",
+        hours: "8",
+      },
+      {
+        img: "com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+        name1: "sus._.m3ow",
+        likes: "14 likes",
+        comment: "like to paint",
+        number: "4",
+        hours: "9",
+      },
+      {
+        img: "photo-1529665253569-6d01c0eaf7b6.jfif",
+        name1: "bishakh_dutta",
+        likes: "44 likes",
+        comment: "I am the hero",
+        number: "13",
+        hours: "3",
+      },
+      {
+        img: "aesthetic-profile-picture-2-1024x1024.jpg",
+        name1: "basudha_02",
+        likes: "144 likes",
+        comment: "Hey guys",
+        number: "18",
+        hours: "2",
+      },
+      {
+        img: "profile-portrait-handsome-young-man-posing-studio-39540543.jpg",
+        name1: "just_aryesh",
+        likes: "184 likes",
+        comment: "Nothing here",
+        number: "5",
+        hours: "18",
+      },
+    ];
+    feedData.forEach((data1,i) => {
+      const elem1 = `
+        <div class=" w-[100%] ">
+          <div class="flex justify-between p-1 ">
+            <div class="  flex items-center gap-2 ">
+              <div class="w-10 h-10 border-red-400 p-[2px] rounded-[50%] border-2 overflow-hidden">
+                  <img
+                    class="h-full w-full rounded-[50%]"
+                    src="${data1.img}"
+                    alt=""/>
+              </div>
+              <p class="  w-[64px] text-center ">${data1.name1}</p>
+                
+            </div>
+            <img src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ik1vcmUgb3B0aW9ucyIgY2xhc3M9Il9hYjYtIiBjb2xvcj0icmdiKDM4LCAzOCwgMzgpIiBmaWxsPSJyZ2IoMzgsIDM4LCAzOCkiIGhlaWdodD0iMjQiIHJvbGU.svg" alt="">
+
+          </div>
+          <img ondblclick="doubleClickLike(this)" src="${data1.img}" width="100%" alt="">
+          <div class="flex p-2 gap-5 relative">
+            <img height="24px" width="24px"                 onmouseover="fadedlike(this)"
+            onmouseout="fadedlikeout(this)" onclick="toggleLike(this)" 
+            src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ikxpa2UiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg" alt="">
+            <img onmouseover="fadedcomment(this)" onmouseout="fadedcommentout(this)"
+             src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNvbW1lbnQiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWc.svg" alt="">
+            <img onmouseover="fadedshare(this)"
+            onmouseout="fadedshareout(this)"
+            src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNoYXJlIFBvc3QiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJ.svg" alt="">
+            <div class="absolute right-4">
+              <img onmouseover="fadedbook(this)"
+              onmouseout="fadedbookout(this)"
+              onclick="togglebook(this)"
+               src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNhdmUiIGNsYXNzPSJfYWI2LSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSIgZmlsbD0icmdiKDM4LCAzOCwgMzgpIiBoZWlnaHQ9IjI0IiByb2xlPSJpbWciIHZ.svg" alt="">
+            </div>
+          </div>
+          <div class=" pl-2 flex-col space-y-[1px]">
+            <p class=" text-[15px] font-bold">${data1.likes}</p>
+            <p><span class="font-bold">${data1.name1}</span> ...${data1.comment}...</p>
+            <p class="text-[14px]">view all <span>${data1.number}</span> comments</p>
+            <div class="flex gap-2">
+              
+              <div class=" w-6 h-6 border rounded-[50%] overflow-hidden">
+                <img src="${data1.img}" alt="">
+              </div>
+              <input class=" text-[14px] focus:outline-0" type="text" placeholder="Add a comment...">
+            </div>
+            <p class=" text-[12px]">${data1.hours} hours ago</p>
+          </div>
+
+        </div>
+        `;
+      feedBar.innerHTML += elem1;
+    });
+
+    const friendBar = document.getElementById("friend-bar");
+    const friendData = [
+      {
+        src: "366154cd80fa1bb93525d01b2ffdb5e1.jpg",
+        name: "Shruti_jain32",
+        follow: "Rahul_xy",
+      },
+      {
+        src: "bcaf18ce6054768da1628a939e2b4f65.jpg",
+        name: "H.R.T.K",
+        follow: "AB and 2 others",
+      },
+      {
+        src: "c98e407a25807b7734eee5c77635a295.jpg",
+        name: "Satish_OP",
+        follow: "Kartoon_30",
+      },
+      {
+        src: "th (1).jfif",
+        name: "Sangeeta_pvt",
+        follow: "Raman_ktv",
+      },
+      {
+        src: "th.jfif",
+        name: "jessika2002",
+        follow: "Nameeta23",
+      },
+    ];
+    friendData.forEach((data2) => {
+      const elem = `
+        <div class=" h-[265px] w-[230px]  flex  ">
+
+
+          <div  class=" m-2 relative w-[200px] rounded-md p-2 flex gap-[1px] flex-col  bg-white items-center">
+            <img class="absolute top-2 right-2"
+             src="svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IkNsb3NlIiBjbGFzcz0iX2FiNi0iIGNvbG9yPSJyZ2IoMTQyLCAxNDIsIDE0MikiIGZpbGw9InJnYigxNDIsIDE0MiwgMTQyKSIgaGVpZ2h0PSIxMiIgcm9sZT0.svg" alt="">
+            <div class="w-[70%] h-[120px] border rounded-[50%] overflow-hidden">
+              <img src="/follow/${data2.src}" alt="">
+
+            </div>
+            <p class=" text-[16px] font-bold">${data2.name}</p>
+            <div class=" text-[14px]">Followed by ${data2.follow}</div>
+            <button class=" border-2 w-[90%] h-[33px] my-2 rounded-lg text-white bg-blue-600 bg-opacity-95 hover:bg-white hover:text-blue-600">Follow</button>
+          </div>
+        </div>
+        `;
+      friendBar.innerHTML += elem;
+    });
+  </script>
+</html>
